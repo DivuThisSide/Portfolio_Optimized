@@ -76,7 +76,7 @@ This ensures proper pipeline flow:
 
 If the pipeline setup is difficult or fails due to environment issues, use the notebook:
 
-📓 **notebooks/**
+📓 **jupyter_notebook**
 
 - Run all cells step-by-step  
 - Useful for quick testing and understanding  
