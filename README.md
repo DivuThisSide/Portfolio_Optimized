@@ -46,8 +46,8 @@ The system follows a **two-stage pipeline**:
 
 1. Clone the repository
 ```bash
-git clone <repo-link>
-cd <project-folder>
+git clone https://github.com/DivuThisSide/Portfolio_Optimized.git
+cd Portfolio_Optimized
 ```
 
 2. Install dependencies
