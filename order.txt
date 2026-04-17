@@ -13,8 +13,8 @@ GRU_model.py
 plot_GRU_baseline.py
 ssa_lstm.py
 ssa_GRU.py
-ssa_optimized_GRU_lstm.py
-plot_optimize_GRU_lstm.py
+ssa_optimized_GRU_LSTM.py
+plot_optimize_GRU_LSTM.py
 portfolio_screener.py
 stock_ranking.py
 mcvar_portfolio_optimizer.py
@@ -27,6 +27,6 @@ stock_gat_mode.py
 data_utils.py
 train_all_stocks.py
 gat_refinement.py
-portfolio_optimizat_utils.py
+portfolio_optimization_utils.py
 portfolio_optimizer.py
 portfolio_allocation_report.py
