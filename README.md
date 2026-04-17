@@ -42,20 +42,6 @@ The system follows a **two-stage pipeline**:
 
 ---
 
-## 📁 Project Structure
-
-```
-├── data/                  # Stock datasets
-├── models/                # Model implementations
-├── utils/                 # Helper functions
-├── order.txt              # Execution order of files
-├── requirements.txt       # Required libraries
-├── main.py / scripts      # Core pipeline scripts
-└── report.pdf             # Detailed project report
-```
-
----
-
 ## ⚙️ Setup & Installation
 
 1. Clone the repository
@@ -73,7 +59,8 @@ pip install -r requirements.txt
 
 ## ▶️ How to Run
 
-Follow the execution sequence strictly as mentioned in:
+### 🔹 Option 1: Full Pipeline (Recommended)
+Follow the execution sequence mentioned in:
 
 📄 **order.txt**
 
@@ -82,6 +69,18 @@ This ensures proper pipeline flow:
 - Model training  
 - Prediction generation  
 - Portfolio optimization  
+
+---
+
+### 🔹 Option 2: Jupyter Notebook (Easy Run)
+
+If the pipeline setup is difficult or fails due to environment issues, use the notebook:
+
+📓 **notebooks/**
+
+- Run all cells step-by-step  
+- Useful for quick testing and understanding  
+- No strict execution order required  
 
 ---
 
@@ -98,9 +97,9 @@ This ensures proper pipeline flow:
 ## 📄 Report
 
 Refer to the **project report PDF** for detailed explanation of:
-- Models and equations  
-- Architecture design  
-- Experimental results  
+- Models and architecture  
+- Mathematical formulations  
+- Experimental analysis  
 
 ---
 
