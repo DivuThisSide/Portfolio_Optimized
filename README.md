@@ -1,4 +1,4 @@
-# Portfolio_Optimized
+# Two-Stage Intelligent Stock Portfolio Optimization using Deep Learning and Mean-CVaR Models
 This project implements an advanced **AI-based portfolio optimization framework** that combines deep learning for stock prediction with a **risk-aware Mean-CVaR optimization model**.
 
 The system follows a **two-stage pipeline**:
@@ -21,15 +21,44 @@ The system follows a **two-stage pipeline**:
 
 ## Methodology
 
-### Stage 1: Prediction
-- Preprocess stock data (normalization + SG filtering)
-- Train models (MLP → LSTM/GRU → CNN-BiLSTM-GAT)
-- Generate predicted returns and uncertainty
+The project is implemented as a **three-phase progressive framework**, where each stage improves upon the previous one.
 
-### Stage 2: Optimization
-- Select top-performing stocks
-- Apply Mean-CVaR optimization
-- Adjust weights based on uncertainty and market regime
+---
+
+### Phase 1: Baseline Model (MLP)
+
+- A **Multi-Layer Perceptron (MLP)** is used as a non-sequential baseline  
+- Input features are preprocessed using:
+  - Normalization  
+  - Basic feature engineering  
+- The model predicts stock returns without capturing temporal dependencies  
+- Purpose:
+  - Establish a baseline for comparison  
+  - Highlight the importance of sequential modeling  
+
+---
+
+### Phase 2: Sequential Modeling + Optimization (LSTM + SSA + Mean-CVaR)
+
+- Apply **Savitzky-Golay (SG) filtering** for noise reduction  
+- Train **LSTM/GRU models** to capture temporal patterns in stock data  
+- Use **Sparrow Search Algorithm (SSA)** for hyperparameter optimization  
+- Generate predicted returns for each stock  
+- Perform portfolio allocation using **Mean-CVaR optimization**, focusing on:
+  - Maximizing returns  
+  - Minimizing tail risk  
+
+---
+
+### Phase 3: Advanced Hybrid Framework  
+(CNN-BiLSTM + GAT + Uncertainty-Aware mCVaR)
+
+- Use **1D-CNN + BiLSTM with Attention** for enhanced temporal feature extraction  
+- Incorporate **Graph Attention Network (GAT)** to model inter-stock relationships  
+- Estimate prediction uncertainty using **Monte Carlo Dropout**  
+- Modify portfolio optimization using **Uncertainty-Aware Mean-CVaR**, where:
+  - High-uncertainty stocks receive lower allocation  
+- Integrate **Hidden Markov Model (HMM)** for market regime detection  
 
 ---
 
