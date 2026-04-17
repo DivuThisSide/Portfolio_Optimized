@@ -7,7 +7,7 @@ The system follows a **two-stage pipeline**:
 
 ---
 
-## 🚀 Features
+## Features
 
 - Deep Learning Models: MLP, LSTM, GRU, CNN-BiLSTM-Attention  
 - Data Denoising using Savitzky-Golay Filter  
@@ -19,21 +19,21 @@ The system follows a **two-stage pipeline**:
 
 ---
 
-## 🧠 Methodology
+## Methodology
 
-### 🔹 Stage 1: Prediction
+### Stage 1: Prediction
 - Preprocess stock data (normalization + SG filtering)
 - Train models (MLP → LSTM/GRU → CNN-BiLSTM-GAT)
 - Generate predicted returns and uncertainty
 
-### 🔹 Stage 2: Optimization
+### Stage 2: Optimization
 - Select top-performing stocks
 - Apply Mean-CVaR optimization
 - Adjust weights based on uncertainty and market regime
 
 ---
 
-## 📊 Results Summary
+## Results Summary
 
 - Best prediction RMSE: ~0.01329  
 - Directional Accuracy: ~52.4%  
@@ -42,7 +42,7 @@ The system follows a **two-stage pipeline**:
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 1. Clone the repository
 ```bash
@@ -57,12 +57,10 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
-### 🔹 Option 1: Full Pipeline (Recommended)
-Follow the execution sequence mentioned in:
-
-📄 **order.txt**
+### Option 1: Full Pipeline (Recommended)
+Follow the execution sequence mentioned in **order.txt**
 
 This ensures proper pipeline flow:
 - Data preprocessing  
@@ -72,11 +70,9 @@ This ensures proper pipeline flow:
 
 ---
 
-### 🔹 Option 2: Jupyter Notebook (Easy Run)
+### Option 2: Jupyter Notebook (Easy Run)
 
-If the pipeline setup is difficult or fails due to environment issues, use the notebook:
-
-📓 **jupyter_notebook**
+If the pipeline setup is difficult or fails due to environment issues, use the **jupyter_notebook**
 
 - Run all cells step-by-step  
 - Useful for quick testing and understanding  
@@ -84,7 +80,7 @@ If the pipeline setup is difficult or fails due to environment issues, use the n
 
 ---
 
-## 📚 Dataset
+## Dataset
 
 - Historical stock data (NSE/BSE stocks)
 - Features include:
@@ -94,7 +90,7 @@ If the pipeline setup is difficult or fails due to environment issues, use the n
 
 ---
 
-## 📄 Report
+## Report
 
 Refer to the **project report PDF** for detailed explanation of:
 - Models and architecture  
@@ -103,7 +99,7 @@ Refer to the **project report PDF** for detailed explanation of:
 
 ---
 
-## 👨‍💻 Authors
+## Authors
 
 - Divyansh Bansal  
 - Yug Sharma  
