@@ -21,9 +21,9 @@ The system follows a **two-stage pipeline**:
 
 ## Methodology
 
-The project is implemented as a **three-phase progressive framework**, where each stage improves upon the previous one.
+The project is implemented as a **three-phase progressive framework**, where each stage improves upon previous one.
 
----
+-
 
 ### Phase 1: Baseline Model (MLP)
 
